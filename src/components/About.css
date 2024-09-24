@@ -1,0 +1,47 @@
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.25rem;
+  }
+  
+  .about-text {
+    flex: 1;
+    margin-right: 2rem;
+    text-align: left;
+  }
+  
+  .about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: center -90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  /* For smaller screens, stack the text and image vertically */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .about-image img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
